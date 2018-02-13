@@ -5,6 +5,7 @@ import datastructures as ds
 
 # testing fuzzwork market data api
 # https://market.fuzzwork.co.uk/api/
+# https://hanns.io/pi/
 """
 **** HUB IDS ****
 Jita 4-4 CNAP - 60003760
