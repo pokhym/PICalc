@@ -98,6 +98,8 @@ class DAY:
 WEEK
 """
 
+# FIXME: NOT SURE IF THE ALL BELOW NEED TO BE IN A CLASS
+
 """
 PROCESS
 """
@@ -115,7 +117,6 @@ class PROCESS:
     def write_out(self, in_DAY):
         return 0
 
-
 """
 PROFIT_CALC
 """
@@ -126,18 +127,37 @@ class PROFIT_CALC:
     # immediate_profit
     # will calculate profit margin based upon the last obtained market data
     def immediate_profit(self):
+        # profit will be calculated from the newest lowest current buy order
+        # (predicted sell price - invested amount) / invested amount = % profit
+        # return predicted sell order price as the average minimum price
         return 0
     
     # daily_sell_profit
     # will calculate the profit margin based up on daily averaged sell order prices
     def daily_sell_profit(self):
+        # predicted sell order price will be se as the average minimum price 
+        # (predicted sell price - invested amount) / invested amount = % profit
+        # return predicted sell order price as the average minimum price
         return 0
     
     # weekly_sell_profit
     # will calculate the profit margin based upon weekly averaged sell order prices
-    def weekly_sell_profit(self):
+    def weekly_sell_profit(self, invested_amount):
+        # predicted sell order price will be se as the average minimum price 
+        # (predicted sell price - invested amount) / invested amount = % profit
+        # return predicted sell order price as the average minimum price
         return 0
 
 """
 PI_CALC
 """
+class PI_CALC:
+    def __init__(self):
+        a=0
+    
+    # resources_req
+    # inputs P4_type, item_DAILY prices, and time to run
+    # it will calculate investment price and amount of resources required to run a specific time (hrs)
+    # for the specific P4_type (probably use an enum)
+    def resources_req(self, P4_type, item_DAILY, time):
+        return 0
